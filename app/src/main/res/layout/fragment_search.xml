@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img"
+            ></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt"
+            android:text="Log in "
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:id="@+id/etxt1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt"
+            android:layout_marginTop="78dp"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:hint="Enter your Email Here "
+            android:paddingLeft="40dp">
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etxt2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/etxt1"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="20dp"
+            android:background="#fff"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:hint="Enter your Password Here "
+            android:paddingLeft="40dp">
+            ></EditText>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etxt2"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:backgroundTint="#0D0D0D"
+            android:text="Log In "
+            >
+
+
+        </Button>
+    </RelativeLayout>
+
+</FrameLayout>
